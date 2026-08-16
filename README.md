@@ -1,74 +1,134 @@
 # OWASP Passive OSINT & External Attack Surface Assessment
 
-## Overview
+## 🔎 Project Overview
 
-This project demonstrates a passive OSINT assessment of OWASP.org
-using publicly accessible information.
+A professional passive OSINT and external attack surface assessment of **OWASP.org** using publicly accessible information.
 
-The assessment focused on DNS infrastructure, website intelligence,
-technology indicators, TLS information, third-party dependencies,
-public digital footprint, findings and security recommendations.
+The assessment focused on identifying publicly observable DNS infrastructure, website intelligence, technology indicators, cloud infrastructure, TLS information, public digital footprint, security findings and recommendations.
 
-## Objectives
+> **Assessment Type:** Passive OSINT / External Attack Surface Assessment  
+> **Target:** OWASP.org  
+> **Authorization:** Publicly accessible information only  
+> **Exploitation:** None performed
 
-- Identify publicly observable DNS infrastructure
-- Analyze relevant subdomains and DNS records
+---
+
+## 🎯 Objectives
+
+- Identify publicly observable DNS records and infrastructure
+- Enumerate relevant OWASP subdomains
+- Analyze A, AAAA and CNAME records
+- Analyze MX, TXT, SPF, DMARC and NS records
 - Review website security headers
-- Identify technology indicators
+- Identify technology and infrastructure indicators
 - Analyze TLS certificate information
-- Review public digital footprint
-- Document security-relevant observations
-- Provide risk ratings and recommendations
+- Document public digital footprint
+- Identify security-relevant observations
+- Assign risk ratings
+- Provide security recommendations
 
-## Scope
+---
 
-**Target:** OWASP.org
+## 🛠️ Tools & Techniques
 
-**Assessment Type:** Passive OSINT / External Attack Surface Assessment
+| Tool / Technique | Purpose |
+|---|---|
+| DNSChecker | DNS record analysis |
+| DNSViz | DNSSEC and DNS relationship analysis |
+| cURL | HTTP response and header analysis |
+| Browser | Website and TLS inspection |
+| WHOIS / ASN information | Infrastructure ownership analysis |
+| Passive OSINT | Public digital footprint analysis |
 
-## Methodology
+---
 
-The assessment covered:
+## 📋 Assessment Scope
 
-1. Domain & DNS Intelligence
-2. Website Intelligence
-3. Technology & Infrastructure
-4. Public Digital Footprint
-5. Findings & Risk Ratings
-6. Recommendations
-7. Evidence
+### Domain & DNS Intelligence
 
-## Tools Used
+- Domain information
+- DNS records
+- Nameservers
+- DNSSEC status
+- Email infrastructure
+- SPF / DMARC
+- Subdomain infrastructure
+- IP / ASN ownership
 
-- DNSChecker
-- DNSViz
-- cURL
-- Browser TLS inspection
-- Public OSINT sources
+### Website Intelligence
 
-## Key Findings
+- HTTP response
+- Security headers
+- HTTPS configuration
+- Redirect behavior
+- robots.txt
+- Content Security Policy
+- Server and caching indicators
 
-- Publicly observable third-party infrastructure dependencies
-- Publicly discoverable DNS and infrastructure information
-- CSP hardening observation
-- Public digital footprint
-- Existing email and DNS security controls
+### Technology & Infrastructure
 
-## Deliverables
+- CDN / hosting indicators
+- Cloud infrastructure
+- Third-party services
+- Technology indicators
+- TLS certificate information
 
-- Professional security assessment report
-- Evidence package
-- Findings and risk ratings
-- Security recommendations
+### Public Digital Footprint
 
-## Security Note
+- Publicly observable domains and subdomains
+- Third-party infrastructure
+- Public services
+- External dependencies
 
-This project was conducted as a passive OSINT assessment using
-publicly accessible information. No exploitation or unauthorized
-access was performed.
+---
 
-## Author
+## 🔐 Key Security Observations
 
-**Vasu Dadhaniya**
+The assessment identified several publicly observable infrastructure and security configuration characteristics.
 
-Cybersecurity | OSINT | SOC | Security Research
+These observations were documented and evaluated based on their potential security relevance and exposure.
+
+Detailed findings, evidence and risk ratings are available in the assessment report.
+
+---
+
+## 📊 Risk Rating
+
+| Severity | Meaning |
+|---|---|
+| 🔴 Critical | Immediate and severe security impact |
+| 🟠 High | Significant security risk |
+| 🟡 Medium | Moderate security concern |
+| 🔵 Low | Limited security impact |
+| ⚪ Informational | Observation with no direct security impact |
+
+---
+
+## 📄 Full Assessment Report
+
+[View the Full OSINT Assessment Report](./OSINT%20Investigation%20%26%20Digital%20Footprint%20Report.pdf)
+
+---
+
+## 🖼️ Evidence
+
+Screenshots and supporting evidence collected during the assessment are available here:
+
+[View Evidence](./Evidence/)
+
+---
+
+## 📁 Repository Structure
+
+```text
+owasp-passive-osint-assessment/
+│
+├── Evidence/
+│   ├── DNS/
+│   ├── Website/
+│   ├── Technology/
+│   └── Other Evidence
+│
+├── OSINT Investigation & Digital Footprint Report.pdf
+│
+└── README.md
