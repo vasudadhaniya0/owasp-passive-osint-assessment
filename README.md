@@ -131,8 +131,8 @@ owasp-passive-osint-assessment/
 │
 ├── OSINT Investigation & Digital Footprint Report.pdf
 │
-└── README.md
-
+└── README
+```
 ## 👤 Author
 
 **Vasu Dadhaniya**
